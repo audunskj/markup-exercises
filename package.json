@@ -1,0 +1,29 @@
+{
+  "name": "markup-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -e js,hbs --watch src src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/audunskj/markup-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/audunskj/markup-exercises/issues"
+  },
+  "homepage": "https://github.com/audunskj/markup-exercises#readme",
+  "devDependencies": {
+    "handlebars": "^4.0.5",
+    "koa-hbs": "^0.9.0",
+    "koa": "^1.2.0",
+    "koa-router": "^5.4.0",
+    "nodemon": "^1.14.11"
+  },
+  "dependencies": {
+    "koa-handlebars": "^1.0.0"
+  }
+}
