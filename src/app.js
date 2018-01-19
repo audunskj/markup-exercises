@@ -12,7 +12,13 @@ app.use(hbs.middleware({
 
 app.use(function *() {
     console.log(this.request.url);
-    yield this.render('main');
+    const path = this.request.url;
+    let template = path.replace('/', '');
+    if (template === '') {
+        template = 'main';
+    }
+    
+    yield this.render(template);
 })
 
 app.listen(9000);
